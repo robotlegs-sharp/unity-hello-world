@@ -16,10 +16,9 @@ namespace helloworld
 		public void Start()
 		{
 			context = new Context ();
-			context.Install<UnityMVCSBundle> ()
-				.Install<UnityFallbackBundle>()
-				.Configure<HelloWorldConfig> ()
-				.Configure (new TransformContextView (this.transform));
+			context.Install<UnitySingleContextBundle> () // Install MVCS Framework
+				.Configure<HelloWorldConfig> () // Setup our hello world config
+				.Configure (new TransformContextView (this.transform)); // Set this transform to boot up the application when it's alive
 		}
 	}
 }

@@ -16,6 +16,8 @@ namespace helloworld.config
 		[Inject] public IMediatorMap mediatorMap;
 		[Inject] public IInjector injector;
 		[Inject] public IContext context;
+		[Inject] public Transform contextViewTransform;
+
 
 		public void Configure ()
 		{
@@ -30,8 +32,10 @@ namespace helloworld.config
 		private void StartApplication()
 		{
 			GameObject buttonView = new GameObject ("Button view");
-			buttonView.transform.parent = context.injector.GetInstance<Transform>();
+			buttonView.transform.parent = contextViewTransform;
 			buttonView.AddComponent<ButtonView> ();
+			RectTransform rectTransform = buttonView.AddComponent<RectTransform>();
+			rectTransform.anchoredPosition = new Vector2(0.5f, 0.5f);
 
 			CreateClickCountView(Vector2.zero, new Vector2(0, 1));
 			CreateClickCountView(new Vector2(Screen.width, 0), new Vector2(1, 1));
@@ -40,13 +44,12 @@ namespace helloworld.config
 		private void CreateClickCountView(Vector2 anchorPosition, Vector2 pivot)
 		{
 			GameObject clickCountView = new GameObject ("Click Count view");
-			clickCountView.transform.parent = context.injector.GetInstance<Transform>();
+			clickCountView.transform.parent = contextViewTransform;
 			clickCountView.AddComponent<ClickCountView> ();
 			RectTransform rectTransform = clickCountView.GetComponent<RectTransform>();
 			rectTransform.pivot = pivot;
 			rectTransform.anchorMax = rectTransform.anchorMin = new Vector2(0, 1);
 			rectTransform.anchoredPosition = anchorPosition;
-
 		}
 	}
 }

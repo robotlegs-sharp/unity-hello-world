@@ -11,7 +11,7 @@ namespace helloworld.controller.commands
 	public class IncrementClickCounterCommand : ICommand
 	{
 		// In IConfig classes you can inject values based on rules from the injector
-		[Inject] public ILogger logger;
+		[Inject] public ILogging logger;
 		[Inject] public IEventDispatcher dispatcher;
 		[Inject] public IClickCountModel model;
 		

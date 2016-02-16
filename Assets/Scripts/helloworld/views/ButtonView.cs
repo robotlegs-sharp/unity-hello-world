@@ -12,7 +12,7 @@ namespace helloworld.views
 		protected override void Start ()
 		{
 			base.Start ();
-			CreateButton("Click me").onClick.AddListener (HandleButtonClicked);
+			CreateButton("Add One Click To Model").onClick.AddListener (HandleButtonClicked);
 		}
 
 		public void ChangeButtonText(int numberOfTimesClicked)
@@ -30,7 +30,6 @@ namespace helloworld.views
 			Button button = gameObject.AddComponent<Button> ();
 			button.targetGraphic = gameObject.AddComponent<Image> ();
 			RectTransform rectTransform = gameObject.GetComponent<RectTransform> ();
-			rectTransform.anchoredPosition = new Vector2 (0.5f, 0.5f);
 			rectTransform.SetSizeWithCurrentAnchors (RectTransform.Axis.Horizontal, 150);
 			rectTransform.SetSizeWithCurrentAnchors (RectTransform.Axis.Vertical, 40);
 			GameObject child = new GameObject ("text");
