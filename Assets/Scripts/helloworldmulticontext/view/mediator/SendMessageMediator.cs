@@ -1,5 +1,5 @@
 ﻿using System;
-using robotlegs.bender.bundles.mvcs;
+using Robotlegs.Bender.Bundles.MVCS;
 using helloworld.events;
 
 namespace helloworldmulticontext.view.mediator

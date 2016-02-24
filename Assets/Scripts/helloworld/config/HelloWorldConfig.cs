@@ -4,9 +4,9 @@ using helloworld.events;
 using helloworld.models;
 using helloworld.views;
 using helloworld.views.mediators;
-using robotlegs.bender.extensions.eventCommandMap.api;
-using robotlegs.bender.extensions.mediatorMap.api;
-using robotlegs.bender.framework.api;
+using Robotlegs.Bender.Extensions.EventCommand.API;
+using Robotlegs.Bender.Extensions.Mediation.API;
+using Robotlegs.Bender.Framework.API;
 
 namespace helloworld.config
 {

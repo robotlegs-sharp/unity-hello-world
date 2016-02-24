@@ -1,5 +1,5 @@
-using robotlegs.bender.extensions.modularity.api;
-using robotlegs.bender.framework.api;
+using Robotlegs.Bender.Extensions.Modularity.API;
+using Robotlegs.Bender.Framework.API;
 using helloworld.events;
 
 namespace helloworldmulticontext.config

@@ -10,7 +10,7 @@ Robotlegs-Sharp Code Reference
 Context
 -------
 ```csharp
-public class Main : MonoBehaviour
+public class HelloWorld : MonoBehaviour
 {
     IContext context;
 
@@ -18,8 +18,7 @@ public class Main : MonoBehaviour
     {
 		// Creation of context, installing extensions and configuration of configs
         context = new Context ();
-        context.Install<UnityMVCSBundle> ()
-            .Install<UnityFallbackBundle>()
+        context.Install<UnitySingleContextBundle> ()
             .Configure<HelloWorldConfig> ()
             .Configure (new TransformContextView (this.transform));
     }

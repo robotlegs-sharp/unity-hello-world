@@ -1,4 +1,4 @@
-using robotlegs.bender.extensions.eventDispatcher.impl;
+using Robotlegs.Bender.Extensions.EventManagement.Impl;
 
 namespace helloworld.events
 {

@@ -1,5 +1,5 @@
 ﻿using System;
-using robotlegs.bender.extensions.mediatorMap.api;
+using Robotlegs.Bender.Extensions.Mediation.API;
 
 namespace helloworldmulticontext.view
 {

@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using helloworld.events;
-using robotlegs.bender.platforms.unity.extensions.mediatorMap.impl;
+using Robotlegs.Bender.Platforms.Unity.Extensions.Mediation.Impl;
 
 namespace helloworld.views
 {

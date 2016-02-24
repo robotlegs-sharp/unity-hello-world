@@ -1,6 +1,6 @@
 ﻿using System;
-using robotlegs.bender.framework.api;
-using robotlegs.bender.extensions.mediatorMap.api;
+using Robotlegs.Bender.Framework.API;
+using Robotlegs.Bender.Extensions.Mediation.API;
 using helloworldmulticontext.view;
 using helloworldmulticontext.view.mediator;
 

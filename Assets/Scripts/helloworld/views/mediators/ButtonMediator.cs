@@ -1,8 +1,8 @@
 using System;
 using helloworld.events;
 using helloworld.views;
-using robotlegs.bender.bundles.mvcs;
-using robotlegs.bender.extensions.eventDispatcher.api;
+using Robotlegs.Bender.Bundles.MVCS;
+using Robotlegs.Bender.Extensions.EventManagement.API;
 
 
 namespace helloworld.views.mediators

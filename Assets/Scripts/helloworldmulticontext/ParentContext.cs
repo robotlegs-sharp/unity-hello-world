@@ -1,9 +1,9 @@
 using UnityEngine;
-using robotlegs.bender.framework.api;
-using robotlegs.bender.framework.impl;
-using robotlegs.bender.bundles;
+using Robotlegs.Bender.Framework.API;
+using Robotlegs.Bender.Framework.Impl;
 using helloworldmulticontext.config;
-using robotlegs.bender.platforms.unity.extensions.contextview.impl;
+using Robotlegs.Bender.Platforms.Unity.Extensions.ContextViews.Impl;
+using Robotlegs.Bender.Platforms.Unity.Bundles;
 
 namespace helloworldmulticontext
 {

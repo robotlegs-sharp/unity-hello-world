@@ -1,7 +1,7 @@
-using robotlegs.bender.extensions.commandCenter.api;
-using robotlegs.bender.framework.api;
+using Robotlegs.Bender.Extensions.CommandCenter.API;
+using Robotlegs.Bender.Framework.API;
 using helloworld.events;
-using robotlegs.bender.extensions.eventDispatcher.api;
+using Robotlegs.Bender.Extensions.EventManagement.API;
 using System;
 using helloworld.models;
 
